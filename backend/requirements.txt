@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+bcrypt
+python-jose[cryptography]
+databases
+sqlalchemy
+pydantic
+pytest
+httpx
