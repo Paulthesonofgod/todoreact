@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+const BASE_URL = 'http://127.0.0.1:8000';
+
 
 export default function TodoPage({ onLogout }) {
   const [tasks, s] = useState([]);
