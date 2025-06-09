@@ -2,6 +2,11 @@ import pytest
 from httpx import AsyncClient
 from ..app.main import app
 from ..app.database import init_db, engine, metadata
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 @pytest.fixture(autouse=True)
 def setup_db():
